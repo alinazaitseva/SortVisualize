@@ -8,20 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		CE463B6920A04A4F004C01D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B6820A04A4F004C01D4 /* AppDelegate.swift */; };
-		CE463B6B20A04A4F004C01D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B6A20A04A4F004C01D4 /* ViewController.swift */; };
 		CE463B6E20A04A4F004C01D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE463B6C20A04A4F004C01D4 /* Main.storyboard */; };
 		CE463B7020A04A51004C01D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE463B6F20A04A51004C01D4 /* Assets.xcassets */; };
 		CE463B7320A04A51004C01D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE463B7120A04A51004C01D4 /* LaunchScreen.storyboard */; };
+		CE463B7D20A04D1B004C01D4 /* SortAlgoritms.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B7C20A04D1B004C01D4 /* SortAlgoritms.swift */; };
+		CE463B8620A055D1004C01D4 /* VisualizationSortTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B8520A055D1004C01D4 /* VisualizationSortTableViewController.swift */; };
+		CE463B8820A0573F004C01D4 /* AlgorithmsSourceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B8720A0573F004C01D4 /* AlgorithmsSourceEntity.swift */; };
+		CE463B8A20A057A6004C01D4 /* VisualizeSourceSortProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B8920A057A6004C01D4 /* VisualizeSourceSortProtocol.swift */; };
+		CE463B8F20A073A2004C01D4 /* AlgorithmsSortEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B8E20A073A2004C01D4 /* AlgorithmsSortEntity.swift */; };
+		CE463B9120A073F0004C01D4 /* AlgorithmsSortProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B9020A073F0004C01D4 /* AlgorithmsSortProtocol.swift */; };
+		CE463B9320A074FE004C01D4 /* ConfigurableCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B9220A074FE004C01D4 /* ConfigurableCellProtocol.swift */; };
+		CE463B9520A07D2A004C01D4 /* AlgorithmsDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B9420A07D2A004C01D4 /* AlgorithmsDetailTableViewController.swift */; };
+		CE463B9920A08C4F004C01D4 /* SortViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B9820A08C4F004C01D4 /* SortViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE463B6520A04A4F004C01D4 /* Pocahontas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pocahontas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE463B6820A04A4F004C01D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE463B6A20A04A4F004C01D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE463B6D20A04A4F004C01D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE463B6F20A04A51004C01D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE463B7220A04A51004C01D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE463B7420A04A51004C01D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE463B7C20A04D1B004C01D4 /* SortAlgoritms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortAlgoritms.swift; sourceTree = "<group>"; };
+		CE463B8520A055D1004C01D4 /* VisualizationSortTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizationSortTableViewController.swift; sourceTree = "<group>"; };
+		CE463B8720A0573F004C01D4 /* AlgorithmsSourceEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsSourceEntity.swift; sourceTree = "<group>"; };
+		CE463B8920A057A6004C01D4 /* VisualizeSourceSortProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizeSourceSortProtocol.swift; sourceTree = "<group>"; };
+		CE463B8E20A073A2004C01D4 /* AlgorithmsSortEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsSortEntity.swift; sourceTree = "<group>"; };
+		CE463B9020A073F0004C01D4 /* AlgorithmsSortProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsSortProtocol.swift; sourceTree = "<group>"; };
+		CE463B9220A074FE004C01D4 /* ConfigurableCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCellProtocol.swift; sourceTree = "<group>"; };
+		CE463B9420A07D2A004C01D4 /* AlgorithmsDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsDetailTableViewController.swift; sourceTree = "<group>"; };
+		CE463B9820A08C4F004C01D4 /* SortViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				CE463B6720A04A4F004C01D4 /* Pocahontas */,
+				CE463B7B20A04CC0004C01D4 /* Example */,
 				CE463B6620A04A4F004C01D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,7 +71,10 @@
 		CE463B6720A04A4F004C01D4 /* Pocahontas */ = {
 			isa = PBXGroup;
 			children = (
-				CE463B6A20A04A4F004C01D4 /* ViewController.swift */,
+				CE463B8B20A071F2004C01D4 /* Cells */,
+				CE463B8020A04E25004C01D4 /* Protocols */,
+				CE463B7F20A04E13004C01D4 /* Controllers */,
+				CE463B7E20A04E08004C01D4 /* Models */,
 				CE463B6C20A04A4F004C01D4 /* Main.storyboard */,
 				CE463B7420A04A51004C01D4 /* Info.plist */,
 				CE463B7A20A04A5D004C01D4 /* Supporting files */,
@@ -70,6 +90,50 @@
 				CE463B7120A04A51004C01D4 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		CE463B7B20A04CC0004C01D4 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				CE463B7C20A04D1B004C01D4 /* SortAlgoritms.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		CE463B7E20A04E08004C01D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE463B8720A0573F004C01D4 /* AlgorithmsSourceEntity.swift */,
+				CE463B8E20A073A2004C01D4 /* AlgorithmsSortEntity.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE463B7F20A04E13004C01D4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE463B8520A055D1004C01D4 /* VisualizationSortTableViewController.swift */,
+				CE463B9420A07D2A004C01D4 /* AlgorithmsDetailTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CE463B8020A04E25004C01D4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CE463B8920A057A6004C01D4 /* VisualizeSourceSortProtocol.swift */,
+				CE463B9020A073F0004C01D4 /* AlgorithmsSortProtocol.swift */,
+				CE463B9220A074FE004C01D4 /* ConfigurableCellProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CE463B8B20A071F2004C01D4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE463B9820A08C4F004C01D4 /* SortViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +207,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE463B6B20A04A4F004C01D4 /* ViewController.swift in Sources */,
+				CE463B9320A074FE004C01D4 /* ConfigurableCellProtocol.swift in Sources */,
+				CE463B8A20A057A6004C01D4 /* VisualizeSourceSortProtocol.swift in Sources */,
+				CE463B9920A08C4F004C01D4 /* SortViewCell.swift in Sources */,
+				CE463B9120A073F0004C01D4 /* AlgorithmsSortProtocol.swift in Sources */,
 				CE463B6920A04A4F004C01D4 /* AppDelegate.swift in Sources */,
+				CE463B8F20A073A2004C01D4 /* AlgorithmsSortEntity.swift in Sources */,
+				CE463B9520A07D2A004C01D4 /* AlgorithmsDetailTableViewController.swift in Sources */,
+				CE463B8620A055D1004C01D4 /* VisualizationSortTableViewController.swift in Sources */,
+				CE463B8820A0573F004C01D4 /* AlgorithmsSourceEntity.swift in Sources */,
+				CE463B7D20A04D1B004C01D4 /* SortAlgoritms.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
