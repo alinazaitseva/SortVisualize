@@ -65,6 +65,9 @@
                         <viewLayoutGuide key="safeArea" id="1Zr-D1-s73"/>
                     </view>
                     <navigationItem key="navigationItem" id="TDV-Ap-sOm"/>
+                    <connections>
+                        <outlet property="containerTableView" destination="7Tv-yk-Mzc" id="euK-bt-f8B"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="882" y="72"/>

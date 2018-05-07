@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AlgorithmsDetailTableViewController: UITableViewController  {
+class AlgorithmsDetailTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
    
     @IBOutlet var containerTableView: UIView!
     let algorithmManipulations = AlgorithmsSourceEntity()
@@ -17,16 +17,16 @@ class AlgorithmsDetailTableViewController: UITableViewController  {
         super.viewDidLoad()
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return algorithmManipulations.getAmountOfValuesInSorceEntity()
     }
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
         if let cell = tableView.dequeueReusableCell(withIdentifier: "SortViewCell", for: indexPath) as? SortViewCell {
             cell.sortViewLabel.text = algorithmManipulations.getValueInSourceEntity(item: indexPath.row)
             return cell
@@ -36,7 +36,7 @@ class AlgorithmsDetailTableViewController: UITableViewController  {
         }
     }
 
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         print(indexPath.row)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
