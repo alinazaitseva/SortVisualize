@@ -17,6 +17,7 @@ class AlgorithmsSourceEntity: VisualizeSourceSortProtocol {
         return ["Insert", "Selection", "Bubble"]
     }
     
+    
     func getValueInSourceEntity(item: Int) -> String {
         return listOfAlgorithmsType[item]
     }
