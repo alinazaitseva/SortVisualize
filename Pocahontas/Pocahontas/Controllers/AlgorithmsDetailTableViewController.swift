@@ -13,7 +13,6 @@ class AlgorithmsDetailTableViewController: UIViewController, UITableViewDelegate
     @IBOutlet var containerTableView: UIView!
     let algorithmManipulations = AlgorithmsSourceEntity()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -38,12 +37,9 @@ class AlgorithmsDetailTableViewController: UIViewController, UITableViewDelegate
         print(indexPath.row)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let visualizeViewController = storyboard.instantiateViewController(withIdentifier: "VisualizeSortViewController") as! VisualizeSortViewController
-        let selectedEntity = AlgorithmsSortEntity(title: algorithmManipulations.getValueInSourceEntity(item: indexPath.row))
-//        visualizeViewController.dataEntity = selectedEntity
+        let selectedEntity = AlgorithmsSourceEntity()
+        visualizeViewController.dataEntity = selectedEntity
         self.navigationController?.pushViewController(visualizeViewController, animated: false)
-    
-    
-       
     }
     /*
     // Override to support conditional editing of the table view.
@@ -52,7 +48,6 @@ class AlgorithmsDetailTableViewController: UIViewController, UITableViewDelegate
         return true
     }
     */
-
     /*
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
