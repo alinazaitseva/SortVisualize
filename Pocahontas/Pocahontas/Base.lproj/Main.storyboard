@@ -13,7 +13,6 @@
         <!--Algorithms Detail Table View Controller-->
         <scene sceneID="lRS-dw-OSh">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qlb-iI-6Gu" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="3Ic-g9-3ic" customClass="AlgorithmsDetailTableViewController" customModule="Pocahontas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u4v-Yh-WBf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -23,15 +22,15 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="20" reuseIdentifier="SortViewCell" id="1Si-Ah-8Jy" customClass="SortViewCell" customModule="Pocahontas" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="20" reuseIdentifier="SortViewCell" id="1Si-Ah-8Jy" customClass="SortViewCell" customModule="Pocahontas" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Si-Ah-8Jy" id="cfU-if-2hu">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRN-XR-I5u">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -69,13 +68,43 @@
                         <outlet property="containerTableView" destination="7Tv-yk-Mzc" id="euK-bt-f8B"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qlb-iI-6Gu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="882" y="72"/>
+        </scene>
+        <!--Visualize Sort View Controller-->
+        <scene sceneID="F7W-Q1-SIC">
+            <objects>
+                <viewController id="Dy9-TA-ilm" customClass="VisualizeSortViewController" customModule="Pocahontas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tji-aT-SdY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2m4-KN-lD6">
+                                <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2m4-KN-lD6" firstAttribute="leading" secondItem="sFo-sa-7cS" secondAttribute="leading" id="7eJ-5Z-D2g"/>
+                            <constraint firstItem="2m4-KN-lD6" firstAttribute="top" secondItem="sFo-sa-7cS" secondAttribute="top" constant="80" id="Kz2-pE-cXl"/>
+                            <constraint firstItem="sFo-sa-7cS" firstAttribute="bottom" secondItem="2m4-KN-lD6" secondAttribute="bottom" id="b7f-ei-eTT"/>
+                            <constraint firstItem="sFo-sa-7cS" firstAttribute="trailing" secondItem="2m4-KN-lD6" secondAttribute="trailing" id="lH8-hx-MKA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sFo-sa-7cS"/>
+                    </view>
+                    <connections>
+                        <outlet property="visualizeTableView" destination="2m4-KN-lD6" id="LJ9-Wx-XsN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="21T-k5-QjC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1632.8" y="71.514242878560722"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pj6-xJ-8XR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YE5-gu-2IP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xg6-JC-Pq8" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IRa-Tl-2ed">
@@ -87,6 +116,7 @@
                         <segue destination="3Ic-g9-3ic" kind="relationship" relationship="rootViewController" id="93A-AZ-Vzn"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YE5-gu-2IP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="104.8" y="71.514242878560722"/>
         </scene>

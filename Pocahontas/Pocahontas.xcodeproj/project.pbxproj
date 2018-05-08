@@ -11,8 +11,6 @@
 		CE463B6E20A04A4F004C01D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE463B6C20A04A4F004C01D4 /* Main.storyboard */; };
 		CE463B7020A04A51004C01D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE463B6F20A04A51004C01D4 /* Assets.xcassets */; };
 		CE463B7320A04A51004C01D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE463B7120A04A51004C01D4 /* LaunchScreen.storyboard */; };
-		CE463B7D20A04D1B004C01D4 /* SortAlgoritms.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B7C20A04D1B004C01D4 /* SortAlgoritms.swift */; };
-		CE463B8620A055D1004C01D4 /* VisualizationSortTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B8520A055D1004C01D4 /* VisualizationSortTableViewController.swift */; };
 		CE463B8820A0573F004C01D4 /* AlgorithmsSourceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B8720A0573F004C01D4 /* AlgorithmsSourceEntity.swift */; };
 		CE463B8A20A057A6004C01D4 /* VisualizeSourceSortProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B8920A057A6004C01D4 /* VisualizeSourceSortProtocol.swift */; };
 		CE463B8F20A073A2004C01D4 /* AlgorithmsSortEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B8E20A073A2004C01D4 /* AlgorithmsSortEntity.swift */; };
@@ -20,6 +18,10 @@
 		CE463B9320A074FE004C01D4 /* ConfigurableCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B9220A074FE004C01D4 /* ConfigurableCellProtocol.swift */; };
 		CE463B9520A07D2A004C01D4 /* AlgorithmsDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B9420A07D2A004C01D4 /* AlgorithmsDetailTableViewController.swift */; };
 		CE463B9920A08C4F004C01D4 /* SortViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B9820A08C4F004C01D4 /* SortViewCell.swift */; };
+		CE88925E20A18874009AB8BD /* InsertionSortModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88925D20A18874009AB8BD /* InsertionSortModel.swift */; };
+		CE88926020A188D2009AB8BD /* SelectionSortModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88925F20A188D2009AB8BD /* SelectionSortModel.swift */; };
+		CE88926220A18924009AB8BD /* BubbleSortModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88926120A18924009AB8BD /* BubbleSortModel.swift */; };
+		CE88926420A1AA0F009AB8BD /* VisualizeSortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88926320A1AA0F009AB8BD /* VisualizeSortViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +31,6 @@
 		CE463B6F20A04A51004C01D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE463B7220A04A51004C01D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE463B7420A04A51004C01D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE463B7C20A04D1B004C01D4 /* SortAlgoritms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortAlgoritms.swift; sourceTree = "<group>"; };
-		CE463B8520A055D1004C01D4 /* VisualizationSortTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizationSortTableViewController.swift; sourceTree = "<group>"; };
 		CE463B8720A0573F004C01D4 /* AlgorithmsSourceEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsSourceEntity.swift; sourceTree = "<group>"; };
 		CE463B8920A057A6004C01D4 /* VisualizeSourceSortProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizeSourceSortProtocol.swift; sourceTree = "<group>"; };
 		CE463B8E20A073A2004C01D4 /* AlgorithmsSortEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsSortEntity.swift; sourceTree = "<group>"; };
@@ -38,6 +38,10 @@
 		CE463B9220A074FE004C01D4 /* ConfigurableCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCellProtocol.swift; sourceTree = "<group>"; };
 		CE463B9420A07D2A004C01D4 /* AlgorithmsDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsDetailTableViewController.swift; sourceTree = "<group>"; };
 		CE463B9820A08C4F004C01D4 /* SortViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortViewCell.swift; sourceTree = "<group>"; };
+		CE88925D20A18874009AB8BD /* InsertionSortModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSortModel.swift; sourceTree = "<group>"; };
+		CE88925F20A188D2009AB8BD /* SelectionSortModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionSortModel.swift; sourceTree = "<group>"; };
+		CE88926120A18924009AB8BD /* BubbleSortModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSortModel.swift; sourceTree = "<group>"; };
+		CE88926320A1AA0F009AB8BD /* VisualizeSortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizeSortViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +99,6 @@
 		CE463B7B20A04CC0004C01D4 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				CE463B7C20A04D1B004C01D4 /* SortAlgoritms.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -105,6 +108,9 @@
 			children = (
 				CE463B8720A0573F004C01D4 /* AlgorithmsSourceEntity.swift */,
 				CE463B8E20A073A2004C01D4 /* AlgorithmsSortEntity.swift */,
+				CE88925D20A18874009AB8BD /* InsertionSortModel.swift */,
+				CE88925F20A188D2009AB8BD /* SelectionSortModel.swift */,
+				CE88926120A18924009AB8BD /* BubbleSortModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -112,8 +118,8 @@
 		CE463B7F20A04E13004C01D4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CE463B8520A055D1004C01D4 /* VisualizationSortTableViewController.swift */,
 				CE463B9420A07D2A004C01D4 /* AlgorithmsDetailTableViewController.swift */,
+				CE88926320A1AA0F009AB8BD /* VisualizeSortViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -214,9 +220,11 @@
 				CE463B6920A04A4F004C01D4 /* AppDelegate.swift in Sources */,
 				CE463B8F20A073A2004C01D4 /* AlgorithmsSortEntity.swift in Sources */,
 				CE463B9520A07D2A004C01D4 /* AlgorithmsDetailTableViewController.swift in Sources */,
-				CE463B8620A055D1004C01D4 /* VisualizationSortTableViewController.swift in Sources */,
 				CE463B8820A0573F004C01D4 /* AlgorithmsSourceEntity.swift in Sources */,
-				CE463B7D20A04D1B004C01D4 /* SortAlgoritms.swift in Sources */,
+				CE88926220A18924009AB8BD /* BubbleSortModel.swift in Sources */,
+				CE88926420A1AA0F009AB8BD /* VisualizeSortViewController.swift in Sources */,
+				CE88926020A188D2009AB8BD /* SelectionSortModel.swift in Sources */,
+				CE88925E20A18874009AB8BD /* InsertionSortModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,6 +20,4 @@ class AlgorithmsSortEntity: AlgorithmsSortProtocol {
     init(title: String) {
         self.title = title
     }
-    
-    
 }

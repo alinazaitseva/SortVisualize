@@ -12,16 +12,10 @@ class AlgorithmsSourceEntity: VisualizeSourceSortProtocol {
     func getAmountOfValuesInSorceEntity() -> Int {
         return listOfAlgorithmsType.count
     }
-    
     var listOfAlgorithmsType: [String] {
         return ["Insert", "Selection", "Bubble"]
     }
-    
-    
     func getValueInSourceEntity(item: Int) -> String {
         return listOfAlgorithmsType[item]
     }
-    
 }
-
-

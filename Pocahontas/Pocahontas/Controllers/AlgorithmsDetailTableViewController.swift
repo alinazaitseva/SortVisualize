@@ -40,6 +40,7 @@ class AlgorithmsDetailTableViewController: UIViewController, UITableViewDelegate
         tableView.deselectRow(at: indexPath, animated: true)
         print(indexPath.row)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
        
     }
     /*
