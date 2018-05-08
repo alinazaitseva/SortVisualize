@@ -9,5 +9,5 @@
 import Foundation
 
 protocol AlgorithmsSortProtocol {
-    var titleOfAlgorithm: String { get }
+    var titleOfString: String { get }
 }

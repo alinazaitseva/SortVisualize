@@ -14,6 +14,6 @@ class SortViewCell: UITableViewCell {
 
 extension SortViewCell: ConfigurableCellProtocol {
     func configure(with model: AlgorithmsSortEntity) {
-        sortViewLabel.text = model.titleOfAlgorithm
+        sortViewLabel.text = model.titleOfString
     }
 }

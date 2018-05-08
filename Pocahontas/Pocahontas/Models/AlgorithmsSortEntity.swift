@@ -12,7 +12,7 @@ class AlgorithmsSortEntity: AlgorithmsSortProtocol {
     
     private let title: String
     
-    var titleOfAlgorithm: String {
+    var titleOfString: String {
         get {
             return title.self
         }

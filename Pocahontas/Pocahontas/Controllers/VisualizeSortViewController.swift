@@ -10,6 +10,14 @@ import UIKit
 
 class VisualizeSortViewController: UIViewController {
 
+    @IBOutlet weak var visualizeTableView: UITableView!
+    public var dataEntity: AlgorithmsSourceEntity!
+    public var dataSort: AlgorithmsSortEntity!
+    
+    var insertSort = InsertionSortModel()
+    var selectionSort = SelectionSortModel()
+    var bubleSort = BubbleSortModel()
+   
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -17,9 +25,27 @@ class VisualizeSortViewController: UIViewController {
         super.didReceiveMemoryWarning()
        
     }
-    @IBOutlet weak var visualizeTableView: UITableView!
-    
+    @IBAction func nextActionButton(_ sender: UIButton) {
+        let resultOfAction = insertSort.insertionSort()
+        if !resultOfAction.isFinishAction {
+            let beginPath = IndexPath(row: resultOfAction.at, section: 0)
+            let finishPath = IndexPath(row: resultOfAction.to, section: 0)
+            visualizeTableView.beginUpdates()
+            visualizeTableView.moveRow(at: beginPath, to: finishPath)
+            visualizeTableView.moveRow(at: finishPath, to: beginPath)
+            visualizeTableView.endUpdates()
+        }
+    }
 }
-    extension VisualizeSortViewController {
+extension VisualizeSortViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "VisualizeCell", for: indexPath)
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+
+    }
     
 }

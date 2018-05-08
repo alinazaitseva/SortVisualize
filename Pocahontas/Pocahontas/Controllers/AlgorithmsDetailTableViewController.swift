@@ -13,6 +13,7 @@ class AlgorithmsDetailTableViewController: UIViewController, UITableViewDelegate
     @IBOutlet var containerTableView: UIView!
     let algorithmManipulations = AlgorithmsSourceEntity()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -30,17 +31,18 @@ class AlgorithmsDetailTableViewController: UIViewController, UITableViewDelegate
         if let cell = tableView.dequeueReusableCell(withIdentifier: "SortViewCell", for: indexPath) as? SortViewCell {
             cell.sortViewLabel.text = algorithmManipulations.getValueInSourceEntity(item: indexPath.row)
             return cell
-            
-        } else {
-            return tableView.dequeueReusableCell(withIdentifier: "SortViewCell", for: indexPath)
-        }
+        } else { return UITableViewCell() }
     }
-
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         print(indexPath.row)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
+        let visualizeViewController = storyboard.instantiateViewController(withIdentifier: "VisualizeSortViewController") as! VisualizeSortViewController
+        let selectedEntity = AlgorithmsSortEntity(title: algorithmManipulations.getValueInSourceEntity(item: indexPath.row))
+//        visualizeViewController.dataEntity = selectedEntity
+        self.navigationController?.pushViewController(visualizeViewController, animated: false)
+    
+    
        
     }
     /*
