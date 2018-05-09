@@ -24,7 +24,6 @@
 		CE88926420A1AA0F009AB8BD /* VisualizeSortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88926320A1AA0F009AB8BD /* VisualizeSortViewController.swift */; };
 		CE88926620A1EB2B009AB8BD /* SortMethodsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88926520A1EB2B009AB8BD /* SortMethodsProtocol.swift */; };
 		CE88926920A1F971009AB8BD /* FactoryManagerTypeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88926820A1F971009AB8BD /* FactoryManagerTypeSort.swift */; };
-		CE88926B20A1FA70009AB8BD /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88926A20A1FA70009AB8BD /* File.swift */; };
 		CE98CAFF20A3736B00EE6F57 /* TypeSortEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE98CAFE20A3736B00EE6F57 /* TypeSortEnum.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +47,6 @@
 		CE88926320A1AA0F009AB8BD /* VisualizeSortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizeSortViewController.swift; sourceTree = "<group>"; };
 		CE88926520A1EB2B009AB8BD /* SortMethodsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortMethodsProtocol.swift; sourceTree = "<group>"; };
 		CE88926820A1F971009AB8BD /* FactoryManagerTypeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryManagerTypeSort.swift; sourceTree = "<group>"; };
-		CE88926A20A1FA70009AB8BD /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		CE98CAFE20A3736B00EE6F57 /* TypeSortEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeSortEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				CE463B6720A04A4F004C01D4 /* Pocahontas */,
-				CE463B7B20A04CC0004C01D4 /* Example */,
 				CE463B6620A04A4F004C01D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,14 +100,6 @@
 				CE463B7120A04A51004C01D4 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting files";
-			sourceTree = "<group>";
-		};
-		CE463B7B20A04CC0004C01D4 /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				CE88926A20A1FA70009AB8BD /* File.swift */,
-			);
-			path = Example;
 			sourceTree = "<group>";
 		};
 		CE463B7E20A04E08004C01D4 /* Models */ = {
@@ -243,7 +232,6 @@
 				CE463B9520A07D2A004C01D4 /* AlgorithmsDetailTableViewController.swift in Sources */,
 				CE463B8820A0573F004C01D4 /* AlgorithmsSourceEntity.swift in Sources */,
 				CE88926220A18924009AB8BD /* BubbleSortModel.swift in Sources */,
-				CE88926B20A1FA70009AB8BD /* File.swift in Sources */,
 				CE88926420A1AA0F009AB8BD /* VisualizeSortViewController.swift in Sources */,
 				CE98CAFF20A3736B00EE6F57 /* TypeSortEnum.swift in Sources */,
 				CE88926620A1EB2B009AB8BD /* SortMethodsProtocol.swift in Sources */,
