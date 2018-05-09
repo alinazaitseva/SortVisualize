@@ -9,12 +9,15 @@
 import Foundation
 import UIKit
 
-class InsertionSortModel {
-    
-    var arrayForSort = [2,234,34,-4,6,12,9,11,6]
-    private var lastItem = 1
-    
-    func insertionSort() -> (at: Int, to: Int, isFinishAction: Bool) {
+class InsertionSortModel: SortMethodsProtocol {
+    var count: Int {
+        get {
+            return arrayForSort.count
+        }
+    }
+    var arrayForSort: [Int] = [2,234,34,-4,6,12,9,11,6]
+    var lastItem = 1
+    func getSortAlgorithm() -> (at: Int, to: Int, isFinishAction: Bool) {
         var temporary = 0
         var j = 0
         for i in lastItem..<arrayForSort.count-1 {
@@ -27,5 +30,4 @@ class InsertionSortModel {
         }
         return (at: 0, to: 0, isFinishAction: true)
     }
-    
 }

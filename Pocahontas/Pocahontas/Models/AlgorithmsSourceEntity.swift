@@ -8,7 +8,7 @@
 
 import Foundation
 
-class AlgorithmsSourceEntity: VisualizeSourceSortProtocol {
+class AlgorithmsSourceEntity: VisualizeSourceProtocol {
     func getAmountOfValuesInSorceEntity() -> Int {
         return listOfAlgorithmsType.count
     }

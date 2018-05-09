@@ -9,12 +9,16 @@
 import Foundation
 import UIKit
 
-class SelectionSortModel {
-    
+class SelectionSortModel: SortMethodsProtocol {
+    var count: Int {
+        get {
+            return arrayForSort.count
+        }
+    }
     var arrayForSort = [2,234,34,-4,6,12,9,11,6]
     private var lastItem = 0
     
-    func selectionSort() -> (at: Int, to: Int, isFinishAction: Bool) {
+    func getSortAlgorithm() -> (at: Int, to: Int, isFinishAction: Bool) {
         for i in lastItem..<arrayForSort.count-1 {
             lastItem = i
             var minElement = i

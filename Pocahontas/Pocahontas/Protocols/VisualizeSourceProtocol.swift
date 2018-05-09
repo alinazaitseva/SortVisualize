@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol VisualizeSourceSortProtocol {
+protocol VisualizeSourceProtocol {
     func getValueInSourceEntity(item: Int) -> String
     func getAmountOfValuesInSorceEntity() -> Int
 }

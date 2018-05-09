@@ -9,12 +9,15 @@
 import Foundation
 import UIKit
 
-class BubbleSortModel {
-    
+class BubbleSortModel: SortMethodsProtocol  {
+    var count: Int {
+        get {
+            return arrayForSort.count
+        }
+    }
     var arrayForSort = [2,234,34,-4,6,12,9,11,6]
     private var lastItem = 0
-    
-    func bubleSort() -> (at: Int, to: Int, isFinishAction: Bool) {
+    func getSortAlgorithm() -> (at: Int, to: Int, isFinishAction: Bool) {
         var temporary = 0
         for i in lastItem...arrayForSort.count-1 {
             lastItem = i
@@ -27,7 +30,6 @@ class BubbleSortModel {
                 }
             }
         }
-         return (at: 0, to: 0, isFinishAction: true)
+        return (at: 0, to: 0, isFinishAction: true)
     }
 }
-

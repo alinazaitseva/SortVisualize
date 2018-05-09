@@ -8,11 +8,10 @@
 
 import Foundation
 
-class AlgorithmsSortEntity: AlgorithmsSortProtocol {
+class AlgorithmsSortEntity: AlgorithmsTitleProtocol {
+    var title: String
     
-    private let title: String
-    
-    var titleOfString: String {
+    var titleSort: String {
         get {
             return title.self
         }

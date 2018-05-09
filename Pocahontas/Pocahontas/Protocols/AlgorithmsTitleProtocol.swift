@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol AlgorithmsSortProtocol {
-    var titleOfString: String { get }
+protocol AlgorithmsTitleProtocol {
+    var title: String { get }
 }

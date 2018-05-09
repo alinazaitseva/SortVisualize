@@ -15,18 +15,17 @@ class AlgorithmsDetailTableViewController: UIViewController, UITableViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return algorithmManipulations.getAmountOfValuesInSorceEntity()
     }
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
         if let cell = tableView.dequeueReusableCell(withIdentifier: "SortViewCell", for: indexPath) as? SortViewCell {
             cell.sortViewLabel.text = algorithmManipulations.getValueInSourceEntity(item: indexPath.row)
             return cell
@@ -39,7 +38,8 @@ class AlgorithmsDetailTableViewController: UIViewController, UITableViewDelegate
         let visualizeViewController = storyboard.instantiateViewController(withIdentifier: "VisualizeSortViewController") as! VisualizeSortViewController
         let selectedEntity = AlgorithmsSourceEntity()
         visualizeViewController.dataEntity = selectedEntity
-        self.navigationController?.pushViewController(visualizeViewController, animated: false)
+//        visualizeViewController.dataEntity.ti
+    self.navigationController?.pushViewController(visualizeViewController, animated: true)
     }
     /*
     // Override to support conditional editing of the table view.
