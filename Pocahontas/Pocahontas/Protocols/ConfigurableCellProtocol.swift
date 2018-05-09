@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol ConfigurableCellProtocol {
-    func configure(with model: AlgorithmsSortEntity)
-}
+//protocol ConfigurableCellProtocol {
+//    func configure(with model: AlgorithmsSortEntity)
+//}

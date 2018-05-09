@@ -11,11 +11,11 @@ import Foundation
 class FactoryManagerTypeSort {
     func getTypeSort(type: TypeSortEnum) -> SortMethodsProtocol {
         switch type {
-        case .insertion:
+        case .Insert:
             return InsertionSortModel()
-        case .selection:
+        case .Selection:
             return SelectionSortModel()
-        case .bubble:
+        case .Bubble:
             return BubbleSortModel()
         }
     }

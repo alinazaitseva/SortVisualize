@@ -9,7 +9,7 @@
 import Foundation
 
 enum TypeSortEnum {
-    case insertion
-    case selection
-    case bubble
+    case Insert
+    case Selection
+    case Bubble
 }

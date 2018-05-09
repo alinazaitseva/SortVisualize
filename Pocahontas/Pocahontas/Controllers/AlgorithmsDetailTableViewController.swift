@@ -11,15 +11,14 @@ import UIKit
 class AlgorithmsDetailTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
    
     @IBOutlet var containerTableView: UIView!
-    let algorithmManipulations = AlgorithmsSourceEntity()
-    
+    var entitySource = AlgorithmsSourceEntity()
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        self.title = "Main"
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return algorithmManipulations.getAmountOfValuesInSorceEntity()
+        return entitySource.countOfAlgorithmsType
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -27,19 +26,26 @@ class AlgorithmsDetailTableViewController: UIViewController, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "SortViewCell", for: indexPath) as? SortViewCell {
-            cell.sortViewLabel.text = algorithmManipulations.getValueInSourceEntity(item: indexPath.row)
+            cell.sortViewLabel.text = entitySource.getValueInSourceEntity(item: indexPath.row)
             return cell
         } else { return UITableViewCell() }
     }
+    
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         print(indexPath.row)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let visualizeViewController = storyboard.instantiateViewController(withIdentifier: "VisualizeSortViewController") as! VisualizeSortViewController
-        let selectedEntity = AlgorithmsSourceEntity()
+  
+    let visualizeViewController = storyboard.instantiateViewController(withIdentifier: "VisualizeSortViewController") as! VisualizeSortViewController
+//    let entityModel = entitySource[indexPath.row]
+//    visualizeViewController.entitySource = FactoryManagerTypeSort.getTypeSort(type: entityModel.sortType)
+    
+    let selectedEntity = AlgorithmsSourceEntity()
         visualizeViewController.dataEntity = selectedEntity
-//        visualizeViewController.dataEntity.ti
-    self.navigationController?.pushViewController(visualizeViewController, animated: true)
+        let factory = FactoryManagerTypeSort()
+    let type = TypeSortEnum.Insert
+        visualizeViewController.sortModel = factory.getTypeSort(type: type)
+        self.navigationController?.pushViewController(visualizeViewController, animated: true)
     }
     /*
     // Override to support conditional editing of the table view.

@@ -11,9 +11,11 @@ import UIKit
 class SortViewCell: UITableViewCell {
     @IBOutlet weak var sortViewLabel: UILabel!
 }
-
-extension SortViewCell: ConfigurableCellProtocol {
-    func configure(with model: AlgorithmsSortEntity) {
-        sortViewLabel.text = model.titleSort
+extension UITableViewCell {
+    class var reuseIdentifier: String {
+        return NSStringFromClass(self).components(separatedBy: ".").last!
+    }
+    static var nib: UINib {
+        return UINib(nibName: reuseIdentifier, bundle: nil)
     }
 }

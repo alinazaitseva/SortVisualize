@@ -8,14 +8,27 @@
 
 import Foundation
 
-class AlgorithmsSourceEntity: VisualizeSourceProtocol {
-    func getAmountOfValuesInSorceEntity() -> Int {
-        return listOfAlgorithmsType.count
+class AlgorithmsSourceEntity {
+    
+    var countOfAlgorithmsType: Int {
+        return algorithmType.count
     }
-    var listOfAlgorithmsType: [String] {
+    var algorithmType: [String] {
         return ["Insert", "Selection", "Bubble"]
     }
     func getValueInSourceEntity(item: Int) -> String {
-        return listOfAlgorithmsType[item]
+        return algorithmType[item]
+    }
+    
+    var algorithmsTypeSort = [
+        SortTypeEntity(title: "Insert", sortType: .Insert ),
+        SortTypeEntity( title: "Selection", sortType: .Selection),
+        SortTypeEntity(title: "Bubble", sortType: .Bubble)
+    ]
+    
+    subscript(index: Int) -> SortTypeEntity {
+        get {
+            return algorithmsTypeSort[index]
+        }
     }
 }
