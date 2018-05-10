@@ -37,12 +37,9 @@ class AlgorithmsDetailTableViewController: UIViewController, UITableViewDelegate
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
   
     let visualizeViewController = storyboard.instantiateViewController(withIdentifier: "VisualizeSortViewController") as! VisualizeSortViewController
-//    let entityModel = entitySource[indexPath.row]
-//    visualizeViewController.entitySource = FactoryManagerTypeSort.getTypeSort(type: entityModel.sortType)
-    
     let selectedEntity = AlgorithmsSourceEntity()
         visualizeViewController.dataEntity = selectedEntity
-        let factory = FactoryManagerTypeSort()
+    let factory = FactoryManagerTypeSort()
     let type = TypeSortEnum.Insert
         visualizeViewController.sortModel = factory.getTypeSort(type: type)
         self.navigationController?.pushViewController(visualizeViewController, animated: true)

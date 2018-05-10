@@ -25,10 +25,4 @@ class AlgorithmsSourceEntity {
         SortTypeEntity( title: "Selection", sortType: .Selection),
         SortTypeEntity(title: "Bubble", sortType: .Bubble)
     ]
-    
-    subscript(index: Int) -> SortTypeEntity {
-        get {
-            return algorithmsTypeSort[index]
-        }
-    }
 }
