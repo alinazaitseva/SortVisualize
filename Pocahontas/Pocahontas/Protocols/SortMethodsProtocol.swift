@@ -12,5 +12,4 @@ protocol SortMethodsProtocol {
     var arrayForSort: [Int] { get set }
     var count: Int { get }
     func getSortAlgorithm() -> (at: Int, to: Int, isFinishAction: Bool)
-    subscript(index: Int) -> Int { get }
 }

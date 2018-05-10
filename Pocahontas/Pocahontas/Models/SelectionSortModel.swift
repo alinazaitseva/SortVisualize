@@ -10,10 +10,6 @@ import Foundation
 import UIKit
 
 class SelectionSortModel: SortMethodsProtocol {
-    subscript(index: Int) -> Int {
-         return arrayForSort[index]
-    }
-    
     var count: Int {
         get {
             return arrayForSort.count
