@@ -77,11 +77,11 @@
             <objects>
                 <viewController storyboardIdentifier="VisualizeSortViewController" id="Dy9-TA-ilm" customClass="VisualizeSortViewController" customModule="Pocahontas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tji-aT-SdY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2m4-KN-lD6">
-                                <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                                <rect key="frame" x="0.0" y="100" width="375" height="503"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VisualizeCell" id="2mL-d0-6dx">
@@ -99,7 +99,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ck2-b1-UzV">
-                                <rect key="frame" x="150" y="44" width="87" height="33"/>
+                                <rect key="frame" x="150" y="24" width="87" height="33"/>
                                 <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="0.25853488869863012" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
@@ -119,8 +119,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="2m4-KN-lD6" firstAttribute="leading" secondItem="sFo-sa-7cS" secondAttribute="leading" id="7eJ-5Z-D2g"/>
-                            <constraint firstItem="2m4-KN-lD6" firstAttribute="top" secondItem="sFo-sa-7cS" secondAttribute="top" constant="80" id="Kz2-pE-cXl"/>
-                            <constraint firstItem="sFo-sa-7cS" firstAttribute="bottom" secondItem="ck2-b1-UzV" secondAttribute="bottom" constant="590" id="LBr-rb-aet"/>
+                            <constraint firstItem="2m4-KN-lD6" firstAttribute="top" secondItem="ck2-b1-UzV" secondAttribute="bottom" constant="43" id="8tb-Z2-bOZ"/>
                             <constraint firstItem="sFo-sa-7cS" firstAttribute="bottom" secondItem="2m4-KN-lD6" secondAttribute="bottom" id="b7f-ei-eTT"/>
                             <constraint firstItem="ck2-b1-UzV" firstAttribute="leading" secondItem="sFo-sa-7cS" secondAttribute="leading" constant="150" id="bvM-fd-2mu"/>
                             <constraint firstItem="ck2-b1-UzV" firstAttribute="top" secondItem="sFo-sa-7cS" secondAttribute="top" constant="24" id="fhd-uU-dy7"/>
@@ -129,6 +128,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sFo-sa-7cS"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="visualizeTableView" destination="2m4-KN-lD6" id="LJ9-Wx-XsN"/>
                     </connections>
@@ -136,34 +136,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="21T-k5-QjC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1632.8" y="71.514242878560722"/>
-        </scene>
-        <!--Visualize Sort Table View Controller-->
-        <scene sceneID="0aT-2n-xqt">
-            <objects>
-                <tableViewController storyboardIdentifier="VisualizeSortTableViewController" id="TAM-dt-Vv8" customClass="VisualizeSortTableViewController" customModule="Pocahontas" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5ZF-E5-tfK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="eeN-h4-GrK">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eeN-h4-GrK" id="gEZ-cM-See">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="TAM-dt-Vv8" id="WqG-Ma-LfW"/>
-                            <outlet property="delegate" destination="TAM-dt-Vv8" id="kQY-82-EpA"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X5w-Te-1Gg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2383" y="72"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pj6-xJ-8XR">
